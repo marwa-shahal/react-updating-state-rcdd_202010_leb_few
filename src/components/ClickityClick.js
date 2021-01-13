@@ -19,11 +19,11 @@ class ClickityClick extends React.Component {
   }
  
   handleClick = () => {
-     this.setState({
-    hasBeenClicked: true,
-    currentTheme: 'blue',
-  
+ this.setState({
+  addressInfo: Object.assign({}, this.state.addressInfo, {
+    city: 'New York City'
   })
+});
   };
  
   render() {
